@@ -140,6 +140,10 @@ var swiperMap = new Swiper(".map_swiper", {
             let targetBtn = ".map_btn_room_item-" + index;
             $(".map_btn_room_item").removeClass("active");
             $(targetBtn).addClass("active");
+
+            let targetSpace = ".map_btn_space-" + index;
+            $(".map_btn_space").removeClass("active");
+            $(targetSpace).addClass("active");
         },
     }
 })
