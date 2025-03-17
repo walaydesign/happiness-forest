@@ -108,8 +108,41 @@ var swiperPlan = new Swiper(".plan_swiper", {
         slideChangeTransitionStart: function() {
             let index = $(".plan_swiper").find(".swiper-slide-active").index();
             $(".plan_btn_item").eq(index).addClass("active").siblings(".plan_btn_item").removeClass("active");
+            // if(index == 0) {
+            //     $(".plan_space").addClass("hide");
+            // }else {
+            //     $(".plan_space").removeClass("hide");
+            // }
         },
     }
+})
+
+var swiperPlanSize = new Swiper(".plan-size_swiper", {
+    slidesPerView: 1,
+    speed: 800,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: "#plan-next",
+        prevEl: "#plan-prev",
+    },
+    allowTouchMove: false,
+})
+
+var swiperPlanSizeM = new Swiper(".plan-size_swiper-m", {
+    slidesPerView: 1,
+    speed: 800,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: "#plan-next",
+        prevEl: "#plan-prev",
+    },
+    allowTouchMove: false,
 })
 
 $(".plan_btn_item").click(function(){

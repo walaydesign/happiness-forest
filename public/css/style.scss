@@ -1313,6 +1313,7 @@ main {
         display: flex;
         align-items: center;
         margin-left: 20px;
+        transition: $transition-common;
         li {
             font-size: 22px;
             position: relative;
@@ -1331,6 +1332,20 @@ main {
                 padding-right: 0;
                 &::after {
                     display: none;
+                }
+            }
+        }
+        &.hide {
+            opacity: 0;
+        }
+    }
+    &-size {
+        &_swiper {
+            width: 400px;
+            margin-left: 0;
+            &-m {
+                .plan_space {
+                    justify-content: center;
                 }
             }
         }
@@ -1442,7 +1457,6 @@ main {
     padding-bottom: 22.39vw;
     position: relative;
     &_text {
-        width: 30%;
         .title-1row {
             margin-bottom: 50px;
         }
@@ -1450,6 +1464,9 @@ main {
             width: 100%;
             padding: 0 60px 0 0;
             margin-bottom: 70px;
+        }
+        &-wrap {
+            width: 30%;
         }
     }
     &_pic {
@@ -1517,8 +1534,8 @@ main {
         }
         &-wrap {
             width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
+            // margin-left: auto;
+            // margin-right: auto;
         }
     }
     &_navigation {
@@ -1588,7 +1605,6 @@ main {
             padding-right: 40px;
         }
         &_text {
-            width: 100%;
             .title-1row {
                 margin: 0 auto 50px;
             }
@@ -1611,6 +1627,10 @@ main {
                         transform: translateY(-50%);
                     }
                 }
+            }
+            &-wrap {
+                width: 100%;
+                position: static;
             }
         }
         &_pic {
@@ -1646,6 +1666,10 @@ main {
                     // position: static;
                 }
             }
+            &-wrap {
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
         .swiper-arrow {
             position: absolute;
@@ -1664,6 +1688,9 @@ main {
                 margin: 0 0 2px;
                 display: block;
             }
+        }
+        &_func {
+            position: static;
         }
     }
 
@@ -2169,7 +2196,7 @@ main {
                         &_content {
                             margin: 0;
                             color: #2D3A25;
-                            font-weight: 100;
+                            // font-weight: 100;
                             font-family: $font-notosans;
                             font-size: 18px;
                             letter-spacing: 0.05em;
