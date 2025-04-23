@@ -95,10 +95,10 @@ $(".education .slider_btn_item").click(function(){
 var swiperPlan = new Swiper(".plan_swiper", {
     slidesPerView: 1,
     speed: 800,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
     navigation: {
         nextEl: "#plan-next",
         prevEl: "#plan-prev",
@@ -134,10 +134,10 @@ var swiperPlanSize = new Swiper(".plan-size_swiper", {
 var swiperPlanSizeM = new Swiper(".plan-size_swiper-m", {
     slidesPerView: 1,
     speed: 800,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
     navigation: {
         nextEl: "#plan-next",
         prevEl: "#plan-prev",
@@ -149,15 +149,16 @@ $(".plan_btn_item").click(function(){
     $(this).addClass("active").siblings(".plan_btn_item").removeClass("active");
     let li_index = $(this).index();
     swiperPlan.slideTo(li_index, 1000, true);
+    swiperPlanSizeM.slideTo(li_index, 1000, true);
 })
 
 var swiperMap = new Swiper(".map_swiper", {
     slidesPerView: 1,
     speed: 800,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
     navigation: {
         nextEl: "#map-next",
         prevEl: "#map-prev",
