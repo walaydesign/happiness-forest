@@ -188,19 +188,3 @@ $(".map_btn_room_item").click(function(){
     let li_index = $(this).data("index");
     swiperMap.slideTo(li_index, 1000, true);
 })
-
-function sendEmail(){
-    Email.send({
-        SecureToken: "8207c7d7-4a6c-4797-870d-d16ee71023ce",
-        To : "abc9172017@gmail.com, zhulixdesign@gmail.com, zhuliservice@gmail.com",
-        From : "walayydesign@gmail.com",
-        Subject : "幸福森鄰預約賞屋",
-        Body : "姓名:" + document.getElementById("name").value
-                + "<br>手機:" + document.getElementById("phone").value
-                + "<br>LINE ID:" + document.getElementById("line").value
-                + "<br>居住地區:" + document.getElementById("area").value
-                + "<br>留言:" + document.getElementById("message").value
-    }).then(
-        message => alert("感謝您的來信！我們很快就會和您聯繫！"),
-    );
-}
