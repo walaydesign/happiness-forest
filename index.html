@@ -1,351 +1,671 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
     <title>幸福森鄰</title>
     <meta property="og:image" content="./public/img/share.png" />
     <meta property="og:url" content="./public/img/share.png" />
     <meta property="og:image" content="./public/img/share.png" />
     <meta property="og:url" content="./public/img/share.png" />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./public/css/aos/aos.css">
-    <link rel="stylesheet" href="./public/css/style.css">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/css/aos/aos.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
     <header class="header d-sm-block d-none">
-        <nav class="header_nav">
-            <ul class="d-flex align-items-center justify-content-center">
-                <li class="header_item" data-target="#architecture">建築美學</li>
-                <li class="header_item" data-target="#lifestyle">生活機能</li>
-                <li class="header_item" data-target="#plan">平面配置</li>
-                <li class="header_item" data-target="#material">名品建材</li>
-                <li class="header_item" data-target="#contact">預約表單</li>
-            </ul>
-        </nav>
+      <nav class="header_nav">
+        <ul class="d-flex align-items-center justify-content-center">
+          <li class="header_item" data-target="#architecture">建築美學</li>
+          <li class="header_item" data-target="#lifestyle">生活機能</li>
+          <li class="header_item" data-target="#plan">平面配置</li>
+          <li class="header_item" data-target="#material">名品建材</li>
+          <li class="header_item" data-target="#contact">預約表單</li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main">
-        <div class="kv">
-            <div class="kv_text">
-                <img class="kv_title" src="./public/img/kv-title.svg" alt="" data-aos="fade-up" data-aos-duration="800">
-                <h2 class="kv_size" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <span class="kv_size_num">23-30</span>
-                    <span class="kv_size_ch">坪</span>
-                </h2>
-                <h3 class="kv_info d-flex align-items-end justify-content-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <span class="kv_info_roomnum">2-3</span>
-                    <span class="kv_info_roomunit">房</span>
-                    <span class="kv_info_ratiotext">超低公設比</span>
-                    <span class="kv_info_rationum">22</span>
-                    <span class="kv_info_ratiounit">%</span>
-                </h3>
-                <h4 class="kv_phone" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    <span class="kv_phone_text">河岸公園宅</span>
-                    <span class="kv_phone_num"><small>03-</small>460-9599</span>
-                </h4>
-            </div>
-            <img class="tree kv_tree kv_tree-1 d-md-block d-none" src="./public/img/kv-tree-1.webp" alt="">
-            <img class="tree kv_tree kv_tree-2" src="./public/img/kv-tree-2.webp" alt="">
-            <img class="tree kv_tree kv_tree-3 d-md-block d-none" src="./public/img/kv-tree-3.webp" alt="">
-            <img class="tree kv_tree kv_tree-4 d-md-block d-none" src="./public/img/kv-tree-4.webp" alt="">
-            <img class="tree kv_tree kv_tree-5 d-md-block d-none" src="./public/img/kv-tree-5.webp" alt="">
-            <img class="tree kv_tree kv_tree-6 d-md-block d-none" src="./public/img/kv-tree-6.webp" alt="">
-            <img class="kv_tree kv_bird kv_bird-1 d-md-block d-none" src="./public/img/kv-bird.webp" alt="" data-aos="fade-down-left" data-aos-duration="800">
-            <img class="kv_tree kv_bird kv_bird-2 d-md-none" src="./public/img/kv-bird-2.webp" alt="" data-aos="fade-down-left" data-aos-duration="800">
-            <img class="tree kv_tree kv_tree kv_tree-7 d-md-none" src="./public/img/kv-tree-7.webp" alt="">
-            <img class="tree kv_tree kv_tree kv_tree-8 d-md-none" src="./public/img/kv-tree-8.webp" alt="">
-            <img class="tree kv_tree kv_tree kv_tree-9 d-md-none" src="./public/img/kv-tree-9.webp" alt="">
+      <div class="kv">
+        <div class="kv_text">
+          <img
+            class="kv_title"
+            src="./public/img/kv-title.svg"
+            alt=""
+            data-aos="fade-up"
+            data-aos-duration="800"
+          />
+          <h2
+            class="kv_size"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            <span class="kv_size_num">23-30</span>
+            <span class="kv_size_ch">坪</span>
+          </h2>
+          <h3
+            class="kv_info d-flex align-items-end justify-content-center"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <span class="kv_info_roomnum">2-3</span>
+            <span class="kv_info_roomunit">房</span>
+            <span class="kv_info_ratiotext">超低公設比</span>
+            <span class="kv_info_rationum">22</span>
+            <span class="kv_info_ratiounit">%</span>
+          </h3>
+          <h4
+            class="kv_phone"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="300"
+          >
+            <span class="kv_phone_text">河岸公園宅</span>
+            <span class="kv_phone_num"><small>03-</small>460-9599</span>
+          </h4>
         </div>
-        <div class="architecture" id="architecture">
-            <img class="tree architecture_tree architecture_tree-1 d-lg-block d-none" src="./public/img/architecture-tree-1.webp" alt="">
-            <img class="tree architecture_tree architecture_tree-2 d-lg-block d-none" src="./public/img/architecture-tree-2.webp" alt="">
-            <img class="architecture_bird d-lg-block d-none" src="./public/img/architecture-bird.webp" alt="" data-aos="fade-down-left" data-aos-duration="800">
-            <img class="tree architecture_tree architecture_tree-4 d-lg-none" src="./public/img/architecture-tree-4.webp" alt="">
-            <img class="tree architecture_tree architecture_tree-3 d-lg-none" src="./public/img/architecture-tree-3.webp" alt="">
-            <img class="architecture_spot architecture_spot-1 d-lg-none" src="./public/img/architecture-spot-1.webp" alt="">
-            <img class="architecture_spot architecture_spot-2 d-lg-none" src="./public/img/architecture-spot-2.webp" alt="">
-            <div class="container">
-                <div class="text-layout" data-aos="fade-up" data-aos-duration="800">
-                    <div class="text-layout_title">
-                        <h2 class="title-1row">建築美學</h2>
-                    </div>
-                    <p class="text-layout_content">以白色勾勒純淨線條，散發低調而永恆的美感。戶數單純，不複雜的居住環境打造高品質的生活體驗，完美結合現代建築美學與日常舒適感受。</p>
-                </div>
-                <div class="architecture_pic">
-                    <img class="w-100" src="./public/img/architecture-pic.webp" alt="">
-                    <p>此圖為3D示意圖，實際以交屋現況為準。</p>
-                </div>
-                <h3 class="title-en text-center">Architecture</h3>
+        <img
+          class="tree kv_tree kv_tree-1 d-md-block d-none"
+          src="./public/img/kv-tree-1.webp"
+          alt=""
+        />
+        <img
+          class="tree kv_tree kv_tree-2"
+          src="./public/img/kv-tree-2.webp"
+          alt=""
+        />
+        <img
+          class="tree kv_tree kv_tree-3 d-md-block d-none"
+          src="./public/img/kv-tree-3.webp"
+          alt=""
+        />
+        <img
+          class="tree kv_tree kv_tree-4 d-md-block d-none"
+          src="./public/img/kv-tree-4.webp"
+          alt=""
+        />
+        <img
+          class="tree kv_tree kv_tree-5 d-md-block d-none"
+          src="./public/img/kv-tree-5.webp"
+          alt=""
+        />
+        <img
+          class="tree kv_tree kv_tree-6 d-md-block d-none"
+          src="./public/img/kv-tree-6.webp"
+          alt=""
+        />
+        <img
+          class="kv_tree kv_bird kv_bird-1 d-md-block d-none"
+          src="./public/img/kv-bird.webp"
+          alt=""
+          data-aos="fade-down-left"
+          data-aos-duration="800"
+        />
+        <img
+          class="kv_tree kv_bird kv_bird-2 d-md-none"
+          src="./public/img/kv-bird-2.webp"
+          alt=""
+          data-aos="fade-down-left"
+          data-aos-duration="800"
+        />
+        <img
+          class="tree kv_tree kv_tree kv_tree-7 d-md-none"
+          src="./public/img/kv-tree-7.webp"
+          alt=""
+        />
+        <img
+          class="tree kv_tree kv_tree kv_tree-8 d-md-none"
+          src="./public/img/kv-tree-8.webp"
+          alt=""
+        />
+        <img
+          class="tree kv_tree kv_tree kv_tree-9 d-md-none"
+          src="./public/img/kv-tree-9.webp"
+          alt=""
+        />
+      </div>
+      <div class="architecture" id="architecture">
+        <img
+          class="tree architecture_tree architecture_tree-1 d-lg-block d-none"
+          src="./public/img/architecture-tree-1.webp"
+          alt=""
+        />
+        <img
+          class="tree architecture_tree architecture_tree-2 d-lg-block d-none"
+          src="./public/img/architecture-tree-2.webp"
+          alt=""
+        />
+        <img
+          class="architecture_bird d-lg-block d-none"
+          src="./public/img/architecture-bird.webp"
+          alt=""
+          data-aos="fade-down-left"
+          data-aos-duration="800"
+        />
+        <img
+          class="tree architecture_tree architecture_tree-4 d-lg-none"
+          src="./public/img/architecture-tree-4.webp"
+          alt=""
+        />
+        <img
+          class="tree architecture_tree architecture_tree-3 d-lg-none"
+          src="./public/img/architecture-tree-3.webp"
+          alt=""
+        />
+        <img
+          class="architecture_spot architecture_spot-1 d-lg-none"
+          src="./public/img/architecture-spot-1.webp"
+          alt=""
+        />
+        <img
+          class="architecture_spot architecture_spot-2 d-lg-none"
+          src="./public/img/architecture-spot-2.webp"
+          alt=""
+        />
+        <div class="container">
+          <div class="text-layout" data-aos="fade-up" data-aos-duration="800">
+            <div class="text-layout_title">
+              <h2 class="title-1row">建築美學</h2>
             </div>
+            <p class="text-layout_content">
+              以白色勾勒純淨線條，散發低調而永恆的美感。戶數單純，不複雜的居住環境打造高品質的生活體驗，完美結合現代建築美學與日常舒適感受。
+            </p>
+          </div>
+          <div class="architecture_pic">
+            <img
+              class="w-100"
+              src="./public/img/architecture-pic.webp"
+              alt=""
+            />
+            <p>此圖為3D示意圖，實際以交屋現況為準。</p>
+          </div>
+          <h3 class="title-en text-center">Architecture</h3>
         </div>
-        <div class="lifestyle" id="lifestyle">
-            <img class="tree lifestyle_tree lifestyle_tree-1" src="./public/img/lifestyle_tree-1.webp" alt="">
-            <img class="tree lifestyle_tree lifestyle_tree-2 d-lg-block d-none" src="./public/img/lifestyle_tree-2.webp" alt="">
-            <img class="tree lifestyle_tree lifestyle_tree-3 d-lg-block d-none" src="./public/img/lifestyle_tree-3.webp" alt="">
-            <img class="tree lifestyle_tree lifestyle_tree-4 d-lg-none" src="./public/img/lifestyle_tree-4.webp" alt="">
-            <img class="tree lifestyle_tree lifestyle_tree-5 d-lg-none" src="./public/img/lifestyle_tree-5.webp" alt="">
-            <img class="lifestyle_spot d-lg-none" src="./public/img/architecture-spot-2.webp" alt="">
-            <img class="lifestyle_bird d-lg-none" src="./public/img/lifestyle-bird.webp" alt="" data-aos="fade-down-left" data-aos-duration="800">
-            <div class="container">
-                <div class="text-layout" data-aos="fade-up" data-aos-duration="800">
-                    <div class="text-layout_title">
-                        <h2 class="title-1row">生活機能</h2>
-                    </div>
-                    <p class="text-layout_content">緊鄰龍岡森林公園，綠意環抱，繁華與自然交織。便捷交通串聯，食衣住行一應俱全，滿足日常所需。幸福森活零距離享受，讓生活多一分從容與美好。</p>
-                </div>
-                <div class="lifestyle_pic">
-                    <img class="w-100" src="./public/img/lifestyle_pic.webp" alt="">
-                    <p class="remark">
-                        此生機圖為未來沿線規劃參考圖,僅供參考。
-                    </p>
-                </div>
-                <h3 class="title-en text-center">Lifestyle</h3>
+      </div>
+      <div class="lifestyle" id="lifestyle">
+        <img
+          class="tree lifestyle_tree lifestyle_tree-1"
+          src="./public/img/lifestyle_tree-1.webp"
+          alt=""
+        />
+        <img
+          class="tree lifestyle_tree lifestyle_tree-2 d-lg-block d-none"
+          src="./public/img/lifestyle_tree-2.webp"
+          alt=""
+        />
+        <img
+          class="tree lifestyle_tree lifestyle_tree-3 d-lg-block d-none"
+          src="./public/img/lifestyle_tree-3.webp"
+          alt=""
+        />
+        <img
+          class="tree lifestyle_tree lifestyle_tree-4 d-lg-none"
+          src="./public/img/lifestyle_tree-4.webp"
+          alt=""
+        />
+        <img
+          class="tree lifestyle_tree lifestyle_tree-5 d-lg-none"
+          src="./public/img/lifestyle_tree-5.webp"
+          alt=""
+        />
+        <img
+          class="lifestyle_spot d-lg-none"
+          src="./public/img/architecture-spot-2.webp"
+          alt=""
+        />
+        <img
+          class="lifestyle_bird d-lg-none"
+          src="./public/img/lifestyle-bird.webp"
+          alt=""
+          data-aos="fade-down-left"
+          data-aos-duration="800"
+        />
+        <div class="container">
+          <div class="text-layout" data-aos="fade-up" data-aos-duration="800">
+            <div class="text-layout_title">
+              <h2 class="title-1row">生活機能</h2>
             </div>
+            <p class="text-layout_content">
+              緊鄰龍岡森林公園，綠意環抱，繁華與自然交織。便捷交通串聯，食衣住行一應俱全，滿足日常所需。幸福森活零距離享受，讓生活多一分從容與美好。
+            </p>
+          </div>
+          <div class="lifestyle_pic">
+            <img class="w-100" src="./public/img/lifestyle_pic.webp" alt="" />
+            <p class="remark">此生機圖為未來沿線規劃參考圖,僅供參考。</p>
+          </div>
+          <h3 class="title-en text-center">Lifestyle</h3>
         </div>
-        <div class="traffic">
-            <img class="tree traffic_tree traffic_tree-1 d-lg-block d-none" src="./public/img/traffic-tree.webp" alt="">
-            <img class="tree traffic_tree traffic_tree-2 d-lg-none" src="./public/img/traffic-tree-2.webp" alt="">
-            <img class="traffic_spot d-lg-none" src="./public/img/traffic-spot.webp" alt="">
-            <div class="container">
-                <div class="traffic_text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <h2 class="title-2row">
-                        <span>交通便捷</span>
-                        <span>南來北往鄰距離</span>
-                    </h2>
-                    <h3 class="title-en">CONVENIENT</h3>
-                    <p class="text-layout_content">
-                        中壢新站三鐵共構，結合火車站與捷運，雙軌並行，機捷通往青埔高鐵與桃園機場，捷運綠線串連八德、桃園、蘆竹、大園區，一線串聯桃園生活圈
-                    </p>
+      </div>
+      <div class="traffic">
+        <img
+          class="tree traffic_tree traffic_tree-1 d-lg-block d-none"
+          src="./public/img/traffic-tree.webp"
+          alt=""
+        />
+        <img
+          class="tree traffic_tree traffic_tree-2 d-lg-none"
+          src="./public/img/traffic-tree-2.webp"
+          alt=""
+        />
+        <img
+          class="traffic_spot d-lg-none"
+          src="./public/img/traffic-spot.webp"
+          alt=""
+        />
+        <div class="container">
+          <div
+            class="traffic_text"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            <h2 class="title-2row">
+              <span>交通便捷</span>
+              <span>南來北往鄰距離</span>
+            </h2>
+            <h3 class="title-en">CONVENIENT</h3>
+            <p class="text-layout_content">
+              中壢新站三鐵共構，結合火車站與捷運，雙軌並行，機捷通往青埔高鐵與桃園機場，捷運綠線串連八德、桃園、蘆竹、大園區，一線串聯桃園生活圈
+            </p>
+          </div>
+          <div class="traffic_pic">
+            <img class="w-100" src="./public/img/traffic-pic.webp" alt="" />
+            <p>出處:桃園市政府</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider forest picleft">
+        <img
+          class="tree forest_tree forest_tree-1 d-lg-block d-none"
+          src="./public/img/forest-tree-1.webp"
+          alt=""
+        />
+        <img
+          class="tree forest_tree forest_tree-2 d-lg-block d-none"
+          src="./public/img/forest-tree-2.webp"
+          alt=""
+        />
+        <img
+          class="tree forest_tree forest_tree-3 d-lg-none"
+          src="./public/img/forest-tree-3.webp"
+          alt=""
+        />
+        <img
+          class="tree forest_tree forest_tree-4 d-lg-none"
+          src="./public/img/forest-tree-4.webp"
+          alt=""
+        />
+        <div class="container d-flex align-items-center">
+          <div class="slider_pic">
+            <div class="swiper-container slider_swiper forest_swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slider_swiper_item">
+                    <img src="./public/img/forest-pic-1.webp" alt="" />
+                    <p>實景圖</p>
+                  </div>
                 </div>
-                <div class="traffic_pic">
-                    <img class="w-100" src="./public/img/traffic-pic.webp" alt="">
-                    <p>出處:桃園市政府</p>
+                <div class="swiper-slide">
+                  <div class="slider_swiper_item">
+                    <img src="./public/img/forest-pic-2.webp" alt="" />
+                    <p>實景圖</p>
+                  </div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="slider_swiper_item">
+                    <img src="./public/img/forest-pic-3.webp" alt="" />
+                    <p>實景圖</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-        </div>
-        <div class="slider forest picleft">
-            <img class="tree forest_tree forest_tree-1 d-lg-block d-none" src="./public/img/forest-tree-1.webp" alt="">
-            <img class="tree forest_tree forest_tree-2 d-lg-block d-none" src="./public/img/forest-tree-2.webp" alt="">
-            <img class="tree forest_tree forest_tree-3 d-lg-none" src="./public/img/forest-tree-3.webp" alt="">
-            <img class="tree forest_tree forest_tree-4 d-lg-none" src="./public/img/forest-tree-4.webp" alt="">
-            <div class="container d-flex align-items-center">
-                <div class="slider_pic">
-                    <div class="swiper-container slider_swiper forest_swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="slider_swiper_item">
-                                    <img src="./public/img/forest-pic-1.webp" alt="">
-                                    <p>實景圖</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider_swiper_item">
-                                    <img src="./public/img/forest-pic-2.webp" alt="">
-                                    <p>實景圖</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider_swiper_item">
-                                    <img src="./public/img/forest-pic-3.webp" alt="">
-                                    <p>實景圖</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
+          </div>
+          <div class="slider_text" data-aos="fade-up" data-aos-duration="800">
+            <h2 class="title-2row">
+              <span>綠意森活</span>
+              <span class="small">城市漫步鄰距離</span>
+              <span class="title-en">Forest</span>
+            </h2>
+            <p class="text-layout_content">
+              周邊多座公園環繞，綠意盎然，無論是踏青散步、家人運動，還是帶孩子遊玩，都輕鬆便利。舒適的自然氛圍，打造愜意宜居的生活環境，讓日常多一份悠閒與美好。
+            </p>
+            <div class="slider_btn">
+              <div class="slider_btn_item active">
+                <div class="slider_btn_triangle triangle-left">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-left-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-left-brown.svg"
+                    alt=""
+                  />
                 </div>
-                <div class="slider_text" data-aos="fade-up" data-aos-duration="800">
-                    <h2 class="title-2row">
-                        <span>綠意森活</span>
-                        <span class="small">城市漫步鄰距離</span>
-                        <span class="title-en">Forest</span>
-                    </h2>
-                    <p class="text-layout_content">
-                        周邊多座公園環繞，綠意盎然，無論是踏青散步、家人運動，還是帶孩子遊玩，都輕鬆便利。舒適的自然氛圍，打造愜意宜居的生活環境，讓日常多一份悠閒與美好。
-                    </p>
-                    <div class="slider_btn">
-                        <div class="slider_btn_item active">
-                            <div class="slider_btn_triangle triangle-left">
-                                <img class="normal" src="./public/img/forest-triangle-left-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-left-brown.svg" alt="">
-                            </div>
-                            <p>龍岡森林公園</p>
-                            <div class="slider_btn_triangle triangle-right">
-                                <img class="normal" src="./public/img/forest-triangle-right-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-right-brown.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="slider_btn_item">
-                            <div class="slider_btn_triangle triangle-left">
-                                <img class="normal" src="./public/img/forest-triangle-left-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-left-brown.svg" alt="">
-                            </div>
-                            <p>龍岡大操場</p>
-                            <div class="slider_btn_triangle triangle-right">
-                                <img class="normal" src="./public/img/forest-triangle-right-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-right-brown.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="slider_btn_item">
-                            <div class="slider_btn_triangle triangle-left">
-                                <img class="normal" src="./public/img/forest-triangle-left-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-left-brown.svg" alt="">
-                            </div>
-                            <p>新街溪河岸休閒步道</p>
-                            <div class="slider_btn_triangle triangle-right">
-                                <img class="normal" src="./public/img/forest-triangle-right-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-right-brown.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
+                <p>龍岡森林公園</p>
+                <div class="slider_btn_triangle triangle-right">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-right-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-right-brown.svg"
+                    alt=""
+                  />
                 </div>
+              </div>
+              <div class="slider_btn_item">
+                <div class="slider_btn_triangle triangle-left">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-left-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-left-brown.svg"
+                    alt=""
+                  />
+                </div>
+                <p>龍岡大操場</p>
+                <div class="slider_btn_triangle triangle-right">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-right-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-right-brown.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="slider_btn_item">
+                <div class="slider_btn_triangle triangle-left">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-left-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-left-brown.svg"
+                    alt=""
+                  />
+                </div>
+                <p>新街溪河岸休閒步道</p>
+                <div class="slider_btn_triangle triangle-right">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-right-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-right-brown.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="slider life picright">
-            <img class="tree life_tree life_tree-1 d-lg-block d-none" src="./public/img/life-tree-1.webp" alt="">
-            <img class="tree life_tree life_tree-2 d-lg-block d-none" src="./public/img/life-tree-2.webp" alt="">
-            <img class="tree life_tree life_tree-3 d-lg-none" src="./public/img/life-tree-3.webp" alt="">
-            <img class="tree life_tree life_tree-4 d-lg-none" src="./public/img/life-tree-4.webp" alt="">
-            <div class="container d-flex align-items-center">
-                <div class="slider_pic">
-                    <div class="swiper-container slider_swiper life_swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="slider_swiper_item">
-                                    <img src="./public/img/life-pic-1.webp" alt="">
-                                    <p>實景圖</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider_swiper_item">
-                                    <img src="./public/img/life-pic-2.webp" alt="">
-                                    <p>實景圖</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider_swiper_item">
-                                    <img src="./public/img/life-pic-3.webp" alt="">
-                                    <p>出處:GOOGLE街景截圖</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
+      </div>
+      <div class="slider life picright">
+        <img
+          class="tree life_tree life_tree-1 d-lg-block d-none"
+          src="./public/img/life-tree-1.webp"
+          alt=""
+        />
+        <img
+          class="tree life_tree life_tree-2 d-lg-block d-none"
+          src="./public/img/life-tree-2.webp"
+          alt=""
+        />
+        <img
+          class="tree life_tree life_tree-3 d-lg-none"
+          src="./public/img/life-tree-3.webp"
+          alt=""
+        />
+        <img
+          class="tree life_tree life_tree-4 d-lg-none"
+          src="./public/img/life-tree-4.webp"
+          alt=""
+        />
+        <div class="container d-flex align-items-center">
+          <div class="slider_pic">
+            <div class="swiper-container slider_swiper life_swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slider_swiper_item">
+                    <img src="./public/img/life-pic-1.webp" alt="" />
+                    <p>實景圖</p>
+                  </div>
                 </div>
-                <div class="slider_text" data-aos="fade-up" data-aos-duration="800">
-                    <h2 class="title-2row">
-                        <span>生活日常</span>
-                        <span class="small">休閒漫步鄰距離</span>
-                        <span class="title-en">Life</span>
-                    </h2>
-                    <p class="text-layout_content">
-                        馬祖新村文創園區，將歷史空間活化再利用，打造藝文與教育等文創空間。 便捷交通串聯城市脈動，食衣住行一應俱全，滿足日常所需。幸福森活零距離展開，讓生活多一分從容。
-                    </p>
-                    <div class="slider_btn">
-                        <div class="slider_btn_item active">
-                            <div class="slider_btn_triangle triangle-left">
-                                <img class="normal" src="./public/img/forest-triangle-left-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-left-brown.svg" alt="">
-                            </div>
-                            <p>忠貞市場</p>
-                            <div class="slider_btn_triangle triangle-right">
-                                <img class="normal" src="./public/img/forest-triangle-right-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-right-brown.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="slider_btn_item">
-                            <div class="slider_btn_triangle triangle-left">
-                                <img class="normal" src="./public/img/forest-triangle-left-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-left-brown.svg" alt="">
-                            </div>
-                            <p>馬祖新村</p>
-                            <div class="slider_btn_triangle triangle-right">
-                                <img class="normal" src="./public/img/forest-triangle-right-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-right-brown.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="slider_btn_item">
-                            <div class="slider_btn_triangle triangle-left">
-                                <img class="normal" src="./public/img/forest-triangle-left-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-left-brown.svg" alt="">
-                            </div>
-                            <p>全聯福利中心</p>
-                            <div class="slider_btn_triangle triangle-right">
-                                <img class="normal" src="./public/img/forest-triangle-right-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-right-brown.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
+                <div class="swiper-slide">
+                  <div class="slider_swiper_item">
+                    <img src="./public/img/life-pic-2.webp" alt="" />
+                    <p>實景圖</p>
+                  </div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="slider_swiper_item">
+                    <img src="./public/img/life-pic-3.webp" alt="" />
+                    <p>出處:GOOGLE街景截圖</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
+          </div>
+          <div class="slider_text" data-aos="fade-up" data-aos-duration="800">
+            <h2 class="title-2row">
+              <span>生活日常</span>
+              <span class="small">休閒漫步鄰距離</span>
+              <span class="title-en">Life</span>
+            </h2>
+            <p class="text-layout_content">
+              馬祖新村文創園區，將歷史空間活化再利用，打造藝文與教育等文創空間。
+              便捷交通串聯城市脈動，食衣住行一應俱全，滿足日常所需。幸福森活零距離展開，讓生活多一分從容。
+            </p>
+            <div class="slider_btn">
+              <div class="slider_btn_item active">
+                <div class="slider_btn_triangle triangle-left">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-left-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-left-brown.svg"
+                    alt=""
+                  />
+                </div>
+                <p>忠貞市場</p>
+                <div class="slider_btn_triangle triangle-right">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-right-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-right-brown.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="slider_btn_item">
+                <div class="slider_btn_triangle triangle-left">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-left-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-left-brown.svg"
+                    alt=""
+                  />
+                </div>
+                <p>馬祖新村</p>
+                <div class="slider_btn_triangle triangle-right">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-right-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-right-brown.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="slider_btn_item">
+                <div class="slider_btn_triangle triangle-left">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-left-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-left-brown.svg"
+                    alt=""
+                  />
+                </div>
+                <p>全聯福利中心</p>
+                <div class="slider_btn_triangle triangle-right">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-right-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-right-brown.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="slider education picleft">
-            <img class="tree education_tree education_tree-1 d-lg-block d-none" src="./public/img/education-tree-1.webp" alt="">
-            <div class="container d-flex align-items-center">
-                <div class="slider_pic">
-                    <div class="swiper-container slider_swiper education_swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="slider_swiper_item">
-                                    <img src="./public/img/education-pic-1.webp" alt="">
-                                    <p>實景圖</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider_swiper_item">
-                                    <img src="./public/img/education-pic-4.webp" alt="">
-                                    <p>出處:GOOGLE街景截圖</p>
-                                </div>
-                            </div>
-                            <!-- <div class="swiper-slide">
+      </div>
+      <div class="slider education picleft">
+        <img
+          class="tree education_tree education_tree-1 d-lg-block d-none"
+          src="./public/img/education-tree-1.webp"
+          alt=""
+        />
+        <div class="container d-flex align-items-center">
+          <div class="slider_pic">
+            <div class="swiper-container slider_swiper education_swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slider_swiper_item">
+                    <img src="./public/img/education-pic-1.webp" alt="" />
+                    <p>實景圖</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider_swiper_item">
+                    <img src="./public/img/education-pic-4.webp" alt="" />
+                    <p>出處:GOOGLE街景截圖</p>
+                  </div>
+                </div>
+                <!-- <div class="swiper-slide">
                                 <div class="slider_swiper_item">
                                     <img src="./public/img/education-pic-3.webp" alt="">
                                     <p>實景圖</p>
                                 </div>
                             </div> -->
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="slider_text" data-aos="fade-up" data-aos-duration="800">
+            <h2 class="title-2row">
+              <span>人文教育</span>
+              <span class="small">沐浴書香鄰距離</span>
+              <span class="title-en">Education</span>
+            </h2>
+            <p class="text-layout_content">
+              人文薈萃，書香流轉，坐落於優質教育資源匯聚之地。無論啟蒙成長或人文熏陶，皆輕鬆享有。以知識滋養生活，讓書香與家人時光相伴，成就世代傳承的美好未來。
+            </p>
+            <div class="slider_btn">
+              <div class="slider_btn_item active">
+                <div class="slider_btn_triangle triangle-left">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-left-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-left-brown.svg"
+                    alt=""
+                  />
                 </div>
-                <div class="slider_text" data-aos="fade-up" data-aos-duration="800">
-                    <h2 class="title-2row">
-                        <span>人文教育</span>
-                        <span class="small">沐浴書香鄰距離</span>
-                        <span class="title-en">Education</span>
-                    </h2>
-                    <p class="text-layout_content">
-                        人文薈萃，書香流轉，坐落於優質教育資源匯聚之地。無論啟蒙成長或人文熏陶，皆輕鬆享有。以知識滋養生活，讓書香與家人時光相伴，成就世代傳承的美好未來。
-                    </p>
-                    <div class="slider_btn">
-                        <div class="slider_btn_item active">
-                            <div class="slider_btn_triangle triangle-left">
-                                <img class="normal" src="./public/img/forest-triangle-left-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-left-brown.svg" alt="">
-                            </div>
-                            <p>龍岡國小</p>
-                            <div class="slider_btn_triangle triangle-right">
-                                <img class="normal" src="./public/img/forest-triangle-right-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-right-brown.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="slider_btn_item">
-                            <div class="slider_btn_triangle triangle-left">
-                                <img class="normal" src="./public/img/forest-triangle-left-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-left-brown.svg" alt="">
-                            </div>
-                            <p>龍興國中</p>
-                            <div class="slider_btn_triangle triangle-right">
-                                <img class="normal" src="./public/img/forest-triangle-right-white.svg" alt="">
-                                <img class="active" src="./public/img/forest-triangle-right-brown.svg" alt="">
-                            </div>
-                        </div>
-                        <!-- <div class="slider_btn_item">
+                <p>龍岡國小</p>
+                <div class="slider_btn_triangle triangle-right">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-right-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-right-brown.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="slider_btn_item">
+                <div class="slider_btn_triangle triangle-left">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-left-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-left-brown.svg"
+                    alt=""
+                  />
+                </div>
+                <p>龍興國中</p>
+                <div class="slider_btn_triangle triangle-right">
+                  <img
+                    class="normal"
+                    src="./public/img/forest-triangle-right-white.svg"
+                    alt=""
+                  />
+                  <img
+                    class="active"
+                    src="./public/img/forest-triangle-right-brown.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- <div class="slider_btn_item">
                             <div class="slider_btn_triangle triangle-left">
                                 <img class="normal" src="./public/img/forest-triangle-left-white.svg" alt="">
                                 <img class="active" src="./public/img/forest-triangle-left-brown.svg" alt="">
@@ -356,422 +676,752 @@
                                 <img class="active" src="./public/img/forest-triangle-right-brown.svg" alt="">
                             </div>
                         </div> -->
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
-        <div class="newlife">
-            <h3 class="title-en text-center">New Life Know Your Life</h3>
-            <img class="newlife_bird newlife_bird-1 d-lg-block d-none" src="./public/img/newlife-bird.webp" alt="" data-aos="fade-down-right" data-aos-duration="800">
-            <img class="newlife_bird newlife_bird-2 d-lg-none" src="./public/img/newlife-bird-2.webp" alt="" data-aos="fade-down-right" data-aos-duration="800">
-            <img class="tree newlife_tree d-lg-none" src="./public/img/newlife-tree.webp" alt="">
-        </div>
-        <div class="plan" id="plan">
-            <img class="tree plan_tree plan_tree-1 d-lg-block d-none" src="./public/img/plan-tree-1.webp" alt="">
-            <img class="tree plan_tree plan_tree-2" src="./public/img/plan-tree-2.webp" alt="">
-            <img class="tree plan_tree plan_tree-3 d-lg-block d-none" src="./public/img/plan-tree-3.webp" alt="">
-            <div class="container">
-                <div class="plan_head d-lg-flex align-items-center justify-content-between">
-                    <div class="plan_title" data-aos="fade-up" data-aos-duration="800">
-                        <h2 class="title-1row">全區平面配置參考圖</h2>
-                        <h3 class="title-en mb-lg-0">Floor plan</h3>
-                    </div>
-                    <div class="plan_btn d-flex align-items-center justify-content-lg-start justify-content-center">
-                        <div class="plan_btn_item active">1F</div>
-                        <div class="plan_btn_item">2F</div>
-                        <div class="plan_btn_item">3-5F</div>
-                    </div>
-                </div>
-                <div class="swiper-container plan-size_swiper-m d-lg-none">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <ul class="plan_space d-flex">
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <ul class="plan_space d-flex">
-                                <li><strong>B1:</strong>約30.41坪</li>
-                                <li><strong>C1:</strong>約23.6坪</li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <ul class="plan_space d-flex">
-                                <li><strong>B1:</strong>約30.4坪</li>
-                                <li><strong>C1:</strong>約23.6坪</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-container plan_swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="plan_swiper_item">
-                                <img src="./public/img/plan-pic-1.webp" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="plan_swiper_item">
-                                <img src="./public/img/plan-pic-2.webp" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="plan_swiper_item">
-                                <img src="./public/img/plan-pic-3.webp" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="plan_bottom d-xl-flex d-lg-block d-flex align-items-center justify-content-between">
-                    <div class="d-flex align-items-center">
-                        <div class="swiper-arrow d-flex align-items-center">
-                            <div class="swiper-arrow_item arrow-prev" id="plan-prev">
-                                <svg id="_圖層_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.43 21.53"><defs><style>.cls-1{fill:#a67c52;}</style></defs><g id="_設計"><path class="cls-1" d="M20.89,9.22H5.27l6.59-6.59c.6-.6.6-1.58,0-2.18-.6-.6-1.58-.6-2.18,0L.45,9.67c-.07.07-.14.15-.19.23-.01.02-.02.04-.03.06-.04.07-.08.14-.11.21-.01.03-.02.06-.03.08-.02.07-.05.13-.06.2-.02.1-.03.2-.03.31s.01.21.03.3c.01.07.04.14.06.2,0,.03.01.06.03.08.03.07.07.14.11.21.01.02.02.04.03.06.06.08.12.16.19.23l9.22,9.22c.3.3.7.45,1.09.45s.79-.15,1.09-.45c.6-.6.6-1.58,0-2.18l-6.59-6.59h15.62c.85,0,1.54-.69,1.54-1.54s-.69-1.54-1.54-1.54Z"/></g></svg>
-                            </div>
-                            <div class="swiper-arrow_item arrow-next" id="plan-next">
-                                <svg id="_圖層_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.43 21.53"><defs><style>.cls-1{fill:#a67c52;}</style></defs><g id="_設計"><path class="cls-1" d="M22.43,10.77h0s0,0,0,0c0-.2-.04-.39-.11-.56,0,0,0-.02,0-.02-.08-.19-.19-.36-.34-.51L12.76.45c-.6-.6-1.58-.6-2.18,0-.6.6-.6,1.58,0,2.18l6.59,6.59H1.54c-.85,0-1.54.69-1.54,1.54s.69,1.54,1.54,1.54h15.62l-6.59,6.59c-.6.6-.6,1.58,0,2.18.3.3.7.45,1.09.45s.79-.15,1.09-.45l9.22-9.22c.14-.14.26-.32.34-.51,0,0,0-.02,0-.02.07-.18.11-.36.11-.56Z"/></g></svg>
-                            </div>
-                        </div>
-                        <div class="swiper-container plan-size_swiper d-lg-block d-none">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <ul class="plan_space d-flex">
-                                    </ul>
-                                </div>
-                                <div class="swiper-slide">
-                                    <ul class="plan_space d-flex">
-                                        <li><strong>B1:</strong>約30.41坪</li>
-                                        <li><strong>C1:</strong>約23.6坪</li>
-                                    </ul>
-                                </div>
-                                <div class="swiper-slide">
-                                    <ul class="plan_space d-flex">
-                                        <li><strong>B1:</strong>約30.4坪</li>
-                                        <li><strong>C1:</strong>約23.6坪</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="remark m-0">本圖為參考示意圖,實際應以建照執照核准圖面及雙方簽訂之買賣契約書及建材為準。</p>
-                </div>
+      </div>
+      <div class="newlife">
+        <h3 class="title-en text-center">New Life Know Your Life</h3>
+        <img
+          class="newlife_bird newlife_bird-1 d-lg-block d-none"
+          src="./public/img/newlife-bird.webp"
+          alt=""
+          data-aos="fade-down-right"
+          data-aos-duration="800"
+        />
+        <img
+          class="newlife_bird newlife_bird-2 d-lg-none"
+          src="./public/img/newlife-bird-2.webp"
+          alt=""
+          data-aos="fade-down-right"
+          data-aos-duration="800"
+        />
+        <img
+          class="tree newlife_tree d-lg-none"
+          src="./public/img/newlife-tree.webp"
+          alt=""
+        />
+      </div>
+      <div class="plan" id="plan">
+        <img
+          class="tree plan_tree plan_tree-1 d-lg-block d-none"
+          src="./public/img/plan-tree-1.webp"
+          alt=""
+        />
+        <img
+          class="tree plan_tree plan_tree-2"
+          src="./public/img/plan-tree-2.webp"
+          alt=""
+        />
+        <img
+          class="tree plan_tree plan_tree-3 d-lg-block d-none"
+          src="./public/img/plan-tree-3.webp"
+          alt=""
+        />
+        <div class="container">
+          <div
+            class="plan_head d-lg-flex align-items-center justify-content-between"
+          >
+            <div class="plan_title" data-aos="fade-up" data-aos-duration="800">
+              <h2 class="title-1row">全區平面配置參考圖</h2>
+              <h3 class="title-en mb-lg-0">Floor plan</h3>
             </div>
-            <div data-aos="fade-up" data-aos-duration="800">
-                <h3 class="title-en text-center">Beautiful Home<span class="d-lg-inline d-none">,</span> <br class="d-lg-none">Happy Life</h3>
+            <div
+              class="plan_btn d-flex align-items-center justify-content-lg-start justify-content-center"
+            >
+              <!-- <div class="plan_btn_item active">1F</div> -->
+              <div class="plan_btn_item active">2F</div>
+              <div class="plan_btn_item">3-5F</div>
             </div>
-            
-        </div>
-        <div class="map">
-            <img class="tree map_tree map_tree-1 d-lg-block d-none" src="./public/img/map-tree.webp" alt="">
-            <img class="tree map_tree map_tree-2 d-lg-none" src="./public/img/map-tree-2.webp" alt="">
-            <img class="tree map_tree map_tree-3 d-lg-none" src="./public/img/map-tree-3.webp" alt="">
-            <img class="tree map_tree map_tree-4 d-lg-none" src="./public/img/map-tree-4.webp" alt="">
-            <img class="map_spot d-lg-none" src="./public/img/map-spot.webp" alt="">
-            <div class="container d-lg-flex align-items-center">
-                <div class="map_text-wrap">
-                    <div class="map_text" data-aos="fade-up" data-aos-duration="800">
-                        <h2 class="title-1row">家配圖</h2>
-                        <ul class="text-layout_content">
-                            <li>臥室皆享大面採光</li>
-                            <li>臥室皆可放置舒適雙人床</li>
-                            <li>衛浴皆享乾濕分離，安全性UP</li>
-                        </ul>
-                        <div class="map_btn-wrap">
-                            <div class="map_btn d-lg-block d-flex justify-content-center">
-                                <div class="map_btn_floor">
-                                    <div class="d-flex align-items-center">
-                                        <h4>2F</h4>
-                                        <div class="d-lg-flex d-none align-items-center">
-                                            <div class="map_btn_divide"></div>
-                                            <div class="map_btn_space">
-                                                <p class="map_btn_space map_btn_space-0 active">約30.41坪</p>
-                                                <p class="map_btn_space map_btn_space-1">約23.6坪</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="map_btn_room d-flex align-items-center">
-                                        <div class="map_btn_room_item map_btn_room_item-0 active" data-index="0">B1戶</div>
-                                        <div class="map_btn_room_item map_btn_room_item-1" data-index="1">C1戶</div>
-                                    </div>
-                                </div>
-                                <div class="map_btn_floor">
-                                    <div class="d-flex align-items-center">
-                                        <h4>3-5F</h4>
-                                        <div class="d-lg-flex d-none align-items-center">
-                                            <div class="map_btn_divide"></div>
-                                            <div class="map_btn_space">
-                                                <p class="map_btn_space map_btn_space-2">約30.4坪</p>
-                                                <p class="map_btn_space map_btn_space-3">約23.6坪</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="map_btn_room d-flex align-items-center">
-                                        <div class="map_btn_room_item map_btn_room_item-2" data-index="2">B1戶</div>
-                                        <div class="map_btn_room_item map_btn_room_item-3" data-index="3">C1戶</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="map_btn_space d-lg-none">
-                                <p class="map_btn_space map_btn_space-0 active">約30.41坪</p>
-                                <p class="map_btn_space map_btn_space-1">約23.6坪</p>
-                                <p class="map_btn_space map_btn_space-2">約30.4坪</p>
-                                <p class="map_btn_space map_btn_space-3">約23.6坪</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center map_func">
-                        <div class="swiper-arrow d-flex align-items-center">
-                            <div class="swiper-arrow_item arrow-prev" id="map-prev">
-                                <svg id="_圖層_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.43 21.53"><defs><style>.cls-1{fill:#a67c52;}</style></defs><g id="_設計"><path class="cls-1" d="M20.89,9.22H5.27l6.59-6.59c.6-.6.6-1.58,0-2.18-.6-.6-1.58-.6-2.18,0L.45,9.67c-.07.07-.14.15-.19.23-.01.02-.02.04-.03.06-.04.07-.08.14-.11.21-.01.03-.02.06-.03.08-.02.07-.05.13-.06.2-.02.1-.03.2-.03.31s.01.21.03.3c.01.07.04.14.06.2,0,.03.01.06.03.08.03.07.07.14.11.21.01.02.02.04.03.06.06.08.12.16.19.23l9.22,9.22c.3.3.7.45,1.09.45s.79-.15,1.09-.45c.6-.6.6-1.58,0-2.18l-6.59-6.59h15.62c.85,0,1.54-.69,1.54-1.54s-.69-1.54-1.54-1.54Z"/></g></svg>
-                            </div>
-                            <div class="swiper-arrow_item arrow-next" id="map-next">
-                                <svg id="_圖層_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.43 21.53"><defs><style>.cls-1{fill:#a67c52;}</style></defs><g id="_設計"><path class="cls-1" d="M22.43,10.77h0s0,0,0,0c0-.2-.04-.39-.11-.56,0,0,0-.02,0-.02-.08-.19-.19-.36-.34-.51L12.76.45c-.6-.6-1.58-.6-2.18,0-.6.6-.6,1.58,0,2.18l6.59,6.59H1.54c-.85,0-1.54.69-1.54,1.54s.69,1.54,1.54,1.54h15.62l-6.59,6.59c-.6.6-.6,1.58,0,2.18.3.3.7.45,1.09.45s.79-.15,1.09-.45l9.22-9.22c.14-.14.26-.32.34-.51,0,0,0-.02,0-.02.07-.18.11-.36.11-.56Z"/></g></svg>
-                            </div>
-                        </div>
-                        <div class="map_navigation" id="map-navigation"></div>
-                    </div>
-
-                </div>
-                <div class="map_pic">
-                    <div class="swiper-container map_swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="map_swiper_item">
-                                    <img src="./public/img/map-pic-1.webp" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="map_swiper_item">
-                                    <img src="./public/img/map-pic-2.webp" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="map_swiper_item">
-                                    <img src="./public/img/map-pic-3.webp" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="map_swiper_item">
-                                    <img src="./public/img/map-pic-4.webp" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="remark mx-lg-auto ms-auto">本圖為參考示意圖,實際應以建照執照核准圖面及雙方簽訂之買賣契約書及建材為準。</p>
-                </div>
+          </div>
+          <div class="swiper-container plan-size_swiper-m d-lg-none">
+            <div class="swiper-wrapper">
+              <!-- <div class="swiper-slide">
+                <ul class="plan_space d-flex"></ul>
+              </div> -->
+              <div class="swiper-slide">
+                <ul class="plan_space d-flex">
+                  <li><strong>B1:</strong>約30.41坪</li>
+                  <li><strong>C1:</strong>約23.6坪</li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="plan_space d-flex">
+                  <li><strong>B1:</strong>約30.4坪</li>
+                  <li><strong>C1:</strong>約23.6坪</li>
+                </ul>
+              </div>
             </div>
-        </div>
-        <div class="method">
-            <img class="tree method_tree method_tree-1 d-lg-block d-none" src="./public/img/method-tree-1.webp" alt="">
-            <img class="tree method_tree method_tree-2 d-lg-block d-none" src="./public/img/method-tree-2.webp" alt="">
-            <img class="method_spot method_spot-1 d-lg-none" src="./public/img/method-spot-1.webp" alt="">
-            <img class="method_spot method_spot-2 d-lg-none" src="./public/img/method-spot-2.webp" alt="">
-            <img class="tree method_tree method_tree-3 d-lg-none" src="./public/img/method-tree-3.webp" alt="">
-            <img class="tree method_tree method_tree-4 d-lg-none" src="./public/img/method-tree-4.webp" alt="">
-            <div class="container">
-                <div class="method_title d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="800">
-                    <h2 class="title-1row">建築工法</h2>
-                    <h3 class="title-en">Construction Method</h3>
+          </div>
+          <div class="swiper-container plan_swiper">
+            <div class="swiper-wrapper">
+              <!-- <div class="swiper-slide">
+                <div class="plan_swiper_item">
+                  <img src="./public/img/plan-pic-1.webp" alt="" />
                 </div>
-                <div class="method_content d-lg-flex align-items-center">
-                    <div class="method_item">
-                        <div class="method_item_inner">
-                            <h4>筏式基礎</h4>
-                            <ul>
-                                <li>地基穩定性高</li>
-                                <li>提升抗震能力</li>
-                                <li>適合多種地質條件</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="method_item">
-                        <div class="method_item_inner">
-                            <h4>單層排氣</h4>
-                            <ul>
-                                <li>管線不共用 異味不流竄</li>
-                                <li>病毒細菌不會垂直傳播</li>
-                                <li>浴室水分異味不殘留</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="method_item">
-                        <div class="method_item_inner">
-                            <h4>SA級鋼筋續接器</h4>
-                            <ul>
-                                <li>建築結構更安全</li>
-                                <li>標準化施工品質</li>
-                                <li>增強建築抗震力</li>
-                            </ul>
-                        </div>
-                    </div>
+              </div> -->
+              <div class="swiper-slide">
+                <div class="plan_swiper_item">
+                  <img src="./public/img/plan-pic-2.webp" alt="" />
                 </div>
-            </div>
-        </div>
-        <div class="material" id="material">
-            <img class="tree material_tree material_tree-1 d-lg-block d-none" src="./public/img/material-tree-1.webp" alt="">
-            <div class="container">
-                <div class="material_title d-lg-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="800">
-                    <h2 class="title-1row">精品建材</h2>
-                    <h3 class="title-en">Building Material</h3>
+              </div>
+              <div class="swiper-slide">
+                <div class="plan_swiper_item">
+                  <img src="./public/img/plan-pic-3.webp" alt="" />
                 </div>
-                <div class="material_content d-flex align-items-center justify-content-center flex-wrap">
-                    <div class="material_item">
-                        <div class="material_item_inner sakura">
-                            <img src="./public/img/material-logo-1.webp" alt="">
-                            <h4>櫻花廚具</h4>
-                        </div>
-                    </div>
-                    <div class="material_item">
-                        <div class="material_item_inner shower">
-                            <img src="./public/img/material-logo-2.webp" alt="">
-                            <h4>衛浴</h4>
-                        </div>
-                    </div>
-                    <div class="material_item">
-                        <div class="material_item_inner spc">
-                            <h4>SPC<br>隔音板</h4>
-                        </div>
-                    </div>
-                    <div class="material_item">
-                        <div class="material_item_inner lift">
-                            <img src="./public/img/material-logo-3.webp" alt="">
-                            <h4>崇友電梯</h4>
-                        </div>
-                    </div>
-                    <div class="material_item">
-                        <div class="material_item_inner lock">
-                            <img src="./public/img/material-logo-4.webp" alt="">
-                            <h4>玄關門<br>三合一電子鎖</h4>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="plan_bottom d-xl-flex d-lg-block d-flex align-items-center justify-content-between"
+          >
+            <div class="d-flex align-items-center">
+              <div class="swiper-arrow d-flex align-items-center">
+                <div class="swiper-arrow_item arrow-prev" id="plan-prev">
+                  <svg
+                    id="_圖層_2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 22.43 21.53"
+                  >
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #a67c52;
+                        }
+                      </style>
+                    </defs>
+                    <g id="_設計">
+                      <path
+                        class="cls-1"
+                        d="M20.89,9.22H5.27l6.59-6.59c.6-.6.6-1.58,0-2.18-.6-.6-1.58-.6-2.18,0L.45,9.67c-.07.07-.14.15-.19.23-.01.02-.02.04-.03.06-.04.07-.08.14-.11.21-.01.03-.02.06-.03.08-.02.07-.05.13-.06.2-.02.1-.03.2-.03.31s.01.21.03.3c.01.07.04.14.06.2,0,.03.01.06.03.08.03.07.07.14.11.21.01.02.02.04.03.06.06.08.12.16.19.23l9.22,9.22c.3.3.7.45,1.09.45s.79-.15,1.09-.45c.6-.6.6-1.58,0-2.18l-6.59-6.59h15.62c.85,0,1.54-.69,1.54-1.54s-.69-1.54-1.54-1.54Z"
+                      />
+                    </g>
+                  </svg>
                 </div>
-
-            </div>
-        </div>
-        <div class="newlife-2">
-            <div class="container">
-                <h3 class="title-en">New Life<br>Know<br>Your Life</h3>
-                <img class="tree newlife-2_tree newlife-2_tree-1 d-lg-none" src="./public/img/newlife-tree-2.webp" alt="">
-                <img class="tree newlife-2_tree newlife-2_tree-2 d-lg-none" src="./public/img/newlife-tree-3.webp" alt="">
-                <img class="newlife-2_spot d-lg-none" src="./public/img/newlife-spot.webp" alt="">
-            </div>
-        </div>
-        <div class="contact" id="contact">
-            <img class="tree contact_tree contact_tree-1 d-lg-block d-none" src="./public/img/contact-tree-1.webp" alt="">
-            <img class="contact_bird contact_bird-1" src="./public/img/contact-bird-1.webp" alt="" data-aos="fade-down-left" data-aos-duration="800">
-            <div class="container">
-                <h2 class="title-1row" data-aos="fade-up" data-aos-duration="800">預約表單</h2>
-                <h3 class="title-en" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Contact Us</h3>
-                <form class="contact_form"  id="contact-form">
-                    <div class="row">
-                        <div class="col-md-6 mb-md-0 mb-4">
-                            <div class="contact_input">
-                                <label class="contact_label-2txt" for=""><span>姓</span><span>名</span></label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="contact_input">
-                                <label class="contact_label-2txt" for=""><span>手</span><span>機</span></label>
-                                <input type="phone" id="phone" name="phone" required>
-                            </div>
-                            <div class="contact_input">
-                                <label class="" for="">LINE ID</label>
-                                <input type="text" id="line" name="line">
-                            </div>
-                            <div class="contact_input">
-                                <label for="">居住地區</label>
-                                <input type="text" id="area" name="area">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <textarea class="contact_textarea" placeholder="請輸入您的留言(選填)" name="message" id="message" cols="30" rows="5"></textarea>
-                        </div>
-                    </div>
-                    <input id="submit" type="submit" value="立即預約"/>
-                </form>
-            </div>
-        </div>
-        <footer class="footer">
-            <img class="tree footer_tree footer_tree-1 d-lg-block d-none" src="./public/img/footer-tree-1.webp" alt="">
-            <img class="tree footer_tree footer_tree-2 d-lg-block d-none" src="./public/img/footer-tree-2.webp" alt="">
-            <div class="footer_top">
-                <h2 data-aos="fade-right" data-aos-duration="1000">建案資訊</h2>
-                <div class="footer_inform">
-                    <div class="d-md-flex align-items-end">
-                        <ul class="footer_inform_list">
-                            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
-                                <p class="footer_inform_title">投資興建</p>
-                                <p class="footer_inform_content">
-                                    <span class="footer_inform_content_list">
-                                        <span>福太建設有限公司</span>
-                                    </span>
-                                </p>
-                            </li>
-                            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
-                                <p class="footer_inform_title">建築規劃</p>
-                                <p class="footer_inform_content">輝池建築師事務所</p>
-                            </li>
-                        </ul>
-                        <ul class="footer_inform_list">
-                            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="250">
-                                <p class="footer_inform_title">戶數規劃</p>
-                                <p class="footer_inform_content">1戶店鋪,8戶住宅</p>
-                            </li>
-                            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
-                                <p class="footer_inform_title">樓層規劃</p>
-                                <p class="footer_inform_content">1F-5F</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <ul class="footer_inform_list">
-                        <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="250">
-                            <p class="footer_inform_title">接待會館</p>
-                            <p class="footer_inform_content">桃園市中壢區龍慈路870號1F</p>
-                        </li>
+                <div class="swiper-arrow_item arrow-next" id="plan-next">
+                  <svg
+                    id="_圖層_2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 22.43 21.53"
+                  >
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #a67c52;
+                        }
+                      </style>
+                    </defs>
+                    <g id="_設計">
+                      <path
+                        class="cls-1"
+                        d="M22.43,10.77h0s0,0,0,0c0-.2-.04-.39-.11-.56,0,0,0-.02,0-.02-.08-.19-.19-.36-.34-.51L12.76.45c-.6-.6-1.58-.6-2.18,0-.6.6-.6,1.58,0,2.18l6.59,6.59H1.54c-.85,0-1.54.69-1.54,1.54s.69,1.54,1.54,1.54h15.62l-6.59,6.59c-.6.6-.6,1.58,0,2.18.3.3.7.45,1.09.45s.79-.15,1.09-.45l9.22-9.22c.14-.14.26-.32.34-.51,0,0,0-.02,0-.02.07-.18.11-.36.11-.56Z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="swiper-container plan-size_swiper d-lg-block d-none">
+                <div class="swiper-wrapper">
+                  <!-- <div class="swiper-slide">
+                    <ul class="plan_space d-flex"></ul>
+                  </div> -->
+                  <div class="swiper-slide">
+                    <ul class="plan_space d-flex">
+                      <li><strong>B1:</strong>約30.41坪</li>
+                      <li><strong>C1:</strong>約23.6坪</li>
                     </ul>
+                  </div>
+                  <div class="swiper-slide">
+                    <ul class="plan_space d-flex">
+                      <li><strong>B1:</strong>約30.4坪</li>
+                      <li><strong>C1:</strong>約23.6坪</li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="footer_bottom">
-                <p>Design By <a href="https://zhuliads.com/" target="_blank">Zhuli 築里整合行銷</a></p>
+            <p class="remark m-0">
+              本圖為參考示意圖,實際應以建照執照核准圖面及雙方簽訂之買賣契約書及建材為準。
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="800">
+          <h3 class="title-en text-center">
+            Beautiful Home<span class="d-lg-inline d-none">,</span>
+            <br class="d-lg-none" />Happy Life
+          </h3>
+        </div>
+      </div>
+      <div class="map">
+        <img
+          class="tree map_tree map_tree-1 d-lg-block d-none"
+          src="./public/img/map-tree.webp"
+          alt=""
+        />
+        <img
+          class="tree map_tree map_tree-2 d-lg-none"
+          src="./public/img/map-tree-2.webp"
+          alt=""
+        />
+        <img
+          class="tree map_tree map_tree-3 d-lg-none"
+          src="./public/img/map-tree-3.webp"
+          alt=""
+        />
+        <img
+          class="tree map_tree map_tree-4 d-lg-none"
+          src="./public/img/map-tree-4.webp"
+          alt=""
+        />
+        <img
+          class="map_spot d-lg-none"
+          src="./public/img/map-spot.webp"
+          alt=""
+        />
+        <div class="container d-lg-flex align-items-center">
+          <div class="map_text-wrap">
+            <div class="map_text" data-aos="fade-up" data-aos-duration="800">
+              <h2 class="title-1row">家配圖</h2>
+              <ul class="text-layout_content">
+                <li>臥室皆享大面採光</li>
+                <li>臥室皆可放置舒適雙人床</li>
+                <li>衛浴皆享乾濕分離，安全性UP</li>
+              </ul>
+              <div class="map_btn-wrap">
+                <div class="map_btn d-lg-block d-flex justify-content-center">
+                  <div class="map_btn_floor">
+                    <div class="d-flex align-items-center">
+                      <h4>2F</h4>
+                      <div class="d-lg-flex d-none align-items-center">
+                        <div class="map_btn_divide"></div>
+                        <div class="map_btn_space">
+                          <p class="map_btn_space map_btn_space-0 active">
+                            約30.41坪
+                          </p>
+                          <p class="map_btn_space map_btn_space-1">約23.6坪</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="map_btn_room d-flex align-items-center">
+                      <div
+                        class="map_btn_room_item map_btn_room_item-0 active"
+                        data-index="0"
+                      >
+                        B1戶
+                      </div>
+                      <div
+                        class="map_btn_room_item map_btn_room_item-1"
+                        data-index="1"
+                      >
+                        C1戶
+                      </div>
+                    </div>
+                  </div>
+                  <div class="map_btn_floor">
+                    <div class="d-flex align-items-center">
+                      <h4>3-5F</h4>
+                      <div class="d-lg-flex d-none align-items-center">
+                        <div class="map_btn_divide"></div>
+                        <div class="map_btn_space">
+                          <p class="map_btn_space map_btn_space-2">約30.4坪</p>
+                          <p class="map_btn_space map_btn_space-3">約23.6坪</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="map_btn_room d-flex align-items-center">
+                      <div
+                        class="map_btn_room_item map_btn_room_item-2"
+                        data-index="2"
+                      >
+                        B1戶
+                      </div>
+                      <div
+                        class="map_btn_room_item map_btn_room_item-3"
+                        data-index="3"
+                      >
+                        C1戶
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="map_btn_space d-lg-none">
+                  <p class="map_btn_space map_btn_space-0 active">約30.41坪</p>
+                  <p class="map_btn_space map_btn_space-1">約23.6坪</p>
+                  <p class="map_btn_space map_btn_space-2">約30.4坪</p>
+                  <p class="map_btn_space map_btn_space-3">約23.6坪</p>
+                </div>
+              </div>
             </div>
-        </footer>
+            <div class="d-flex align-items-center map_func">
+              <div class="swiper-arrow d-flex align-items-center">
+                <div class="swiper-arrow_item arrow-prev" id="map-prev">
+                  <svg
+                    id="_圖層_2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 22.43 21.53"
+                  >
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #a67c52;
+                        }
+                      </style>
+                    </defs>
+                    <g id="_設計">
+                      <path
+                        class="cls-1"
+                        d="M20.89,9.22H5.27l6.59-6.59c.6-.6.6-1.58,0-2.18-.6-.6-1.58-.6-2.18,0L.45,9.67c-.07.07-.14.15-.19.23-.01.02-.02.04-.03.06-.04.07-.08.14-.11.21-.01.03-.02.06-.03.08-.02.07-.05.13-.06.2-.02.1-.03.2-.03.31s.01.21.03.3c.01.07.04.14.06.2,0,.03.01.06.03.08.03.07.07.14.11.21.01.02.02.04.03.06.06.08.12.16.19.23l9.22,9.22c.3.3.7.45,1.09.45s.79-.15,1.09-.45c.6-.6.6-1.58,0-2.18l-6.59-6.59h15.62c.85,0,1.54-.69,1.54-1.54s-.69-1.54-1.54-1.54Z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="swiper-arrow_item arrow-next" id="map-next">
+                  <svg
+                    id="_圖層_2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 22.43 21.53"
+                  >
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #a67c52;
+                        }
+                      </style>
+                    </defs>
+                    <g id="_設計">
+                      <path
+                        class="cls-1"
+                        d="M22.43,10.77h0s0,0,0,0c0-.2-.04-.39-.11-.56,0,0,0-.02,0-.02-.08-.19-.19-.36-.34-.51L12.76.45c-.6-.6-1.58-.6-2.18,0-.6.6-.6,1.58,0,2.18l6.59,6.59H1.54c-.85,0-1.54.69-1.54,1.54s.69,1.54,1.54,1.54h15.62l-6.59,6.59c-.6.6-.6,1.58,0,2.18.3.3.7.45,1.09.45s.79-.15,1.09-.45l9.22-9.22c.14-.14.26-.32.34-.51,0,0,0-.02,0-.02.07-.18.11-.36.11-.56Z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="map_navigation" id="map-navigation"></div>
+            </div>
+          </div>
+          <div class="map_pic">
+            <div class="swiper-container map_swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="map_swiper_item">
+                    <img src="./public/img/map-pic-1.webp" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="map_swiper_item">
+                    <img src="./public/img/map-pic-2.webp" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="map_swiper_item">
+                    <img src="./public/img/map-pic-3.webp" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="map_swiper_item">
+                    <img src="./public/img/map-pic-4.webp" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="remark mx-lg-auto ms-auto">
+              本圖為參考示意圖,實際應以建照執照核准圖面及雙方簽訂之買賣契約書及建材為準。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="method">
+        <img
+          class="tree method_tree method_tree-1 d-lg-block d-none"
+          src="./public/img/method-tree-1.webp"
+          alt=""
+        />
+        <img
+          class="tree method_tree method_tree-2 d-lg-block d-none"
+          src="./public/img/method-tree-2.webp"
+          alt=""
+        />
+        <img
+          class="method_spot method_spot-1 d-lg-none"
+          src="./public/img/method-spot-1.webp"
+          alt=""
+        />
+        <img
+          class="method_spot method_spot-2 d-lg-none"
+          src="./public/img/method-spot-2.webp"
+          alt=""
+        />
+        <img
+          class="tree method_tree method_tree-3 d-lg-none"
+          src="./public/img/method-tree-3.webp"
+          alt=""
+        />
+        <img
+          class="tree method_tree method_tree-4 d-lg-none"
+          src="./public/img/method-tree-4.webp"
+          alt=""
+        />
+        <div class="container">
+          <div
+            class="method_title d-flex align-items-center justify-content-center"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <h2 class="title-1row">建築工法</h2>
+            <h3 class="title-en">Construction Method</h3>
+          </div>
+          <div class="method_content d-lg-flex align-items-center">
+            <div class="method_item">
+              <div class="method_item_inner">
+                <h4>筏式基礎</h4>
+                <ul>
+                  <li>地基穩定性高</li>
+                  <li>提升抗震能力</li>
+                  <li>適合多種地質條件</li>
+                </ul>
+              </div>
+            </div>
+            <div class="method_item">
+              <div class="method_item_inner">
+                <h4>單層排氣</h4>
+                <ul>
+                  <li>管線不共用 異味不流竄</li>
+                  <li>病毒細菌不會垂直傳播</li>
+                  <li>浴室水分異味不殘留</li>
+                </ul>
+              </div>
+            </div>
+            <div class="method_item">
+              <div class="method_item_inner">
+                <h4>SA級鋼筋續接器</h4>
+                <ul>
+                  <li>建築結構更安全</li>
+                  <li>標準化施工品質</li>
+                  <li>增強建築抗震力</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="material" id="material">
+        <img
+          class="tree material_tree material_tree-1 d-lg-block d-none"
+          src="./public/img/material-tree-1.webp"
+          alt=""
+        />
+        <div class="container">
+          <div
+            class="material_title d-lg-flex align-items-center justify-content-center"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <h2 class="title-1row">精品建材</h2>
+            <h3 class="title-en">Building Material</h3>
+          </div>
+          <div
+            class="material_content d-flex align-items-center justify-content-center flex-wrap"
+          >
+            <div class="material_item">
+              <div class="material_item_inner sakura">
+                <img src="./public/img/material-logo-1.webp" alt="" />
+                <h4>櫻花廚具</h4>
+              </div>
+            </div>
+            <div class="material_item">
+              <div class="material_item_inner shower">
+                <img src="./public/img/material-logo-2.webp" alt="" />
+                <h4>衛浴</h4>
+              </div>
+            </div>
+            <div class="material_item">
+              <div class="material_item_inner spc">
+                <h4>SPC<br />隔音板</h4>
+              </div>
+            </div>
+            <div class="material_item">
+              <div class="material_item_inner lift">
+                <img src="./public/img/material-logo-3.webp" alt="" />
+                <h4>崇友電梯</h4>
+              </div>
+            </div>
+            <div class="material_item">
+              <div class="material_item_inner lock">
+                <img src="./public/img/material-logo-4.webp" alt="" />
+                <h4>玄關門<br />三合一電子鎖</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="newlife-2">
+        <div class="container">
+          <h3 class="title-en">New Life<br />Know<br />Your Life</h3>
+          <img
+            class="tree newlife-2_tree newlife-2_tree-1 d-lg-none"
+            src="./public/img/newlife-tree-2.webp"
+            alt=""
+          />
+          <img
+            class="tree newlife-2_tree newlife-2_tree-2 d-lg-none"
+            src="./public/img/newlife-tree-3.webp"
+            alt=""
+          />
+          <img
+            class="newlife-2_spot d-lg-none"
+            src="./public/img/newlife-spot.webp"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="contact" id="contact">
+        <img
+          class="tree contact_tree contact_tree-1 d-lg-block d-none"
+          src="./public/img/contact-tree-1.webp"
+          alt=""
+        />
+        <img
+          class="contact_bird contact_bird-1"
+          src="./public/img/contact-bird-1.webp"
+          alt=""
+          data-aos="fade-down-left"
+          data-aos-duration="800"
+        />
+        <div class="container">
+          <h2 class="title-1row" data-aos="fade-up" data-aos-duration="800">
+            預約表單
+          </h2>
+          <h3
+            class="title-en"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            Contact Us
+          </h3>
+          <form
+            class="contact_form"
+            id="contact-form"
+            action="https://formsubmit.co/ajax/78d89b22130f27ba34571c1644f20370"
+            method="POST"
+          >
+            <div class="row">
+              <div class="col-md-6 mb-md-0 mb-4">
+                <div class="contact_input">
+                  <label class="contact_label-2txt" for=""
+                    ><span>姓</span><span>名</span></label
+                  >
+                  <input type="text" id="name" name="姓名" required />
+                </div>
+                <div class="contact_input">
+                  <label class="contact_label-2txt" for=""
+                    ><span>手</span><span>機</span></label
+                  >
+                  <input type="phone" id="phone" name="手機" required />
+                </div>
+                <div class="contact_input">
+                  <label class="" for="">LINE ID</label>
+                  <input type="text" id="line" name="line" />
+                </div>
+                <div class="contact_input">
+                  <label for="">居住地區</label>
+                  <input type="text" id="area" name="居住地區" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <textarea
+                  class="contact_textarea"
+                  placeholder="請輸入您的留言(選填)"
+                  name="留言"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </div>
+            </div>
+            <input type="hidden" name="_subject" value="幸福森鄰預約賞屋" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="true" />
+            <input
+              type="hidden"
+              name="_url"
+              value="https://happylife.zhuliads.com/"
+            />
+            <input
+              type="hidden"
+              name="_cc"
+              value="abc9172017@gmail.com, zhuliservice@gmail.com"
+            />
+            <input id="submit" type="submit" value="立即預約" />
+          </form>
+
+          <!-- <form
+            class="contact_form"
+            id="contact-form"
+          >
+            <div class="row">
+              <div class="col-md-6 mb-md-0 mb-4">
+                <div class="contact_input">
+                  <label class="contact_label-2txt" for=""
+                    ><span>姓</span><span>名</span></label
+                  >
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="contact_input">
+                  <label class="contact_label-2txt" for=""
+                    ><span>手</span><span>機</span></label
+                  >
+                  <input type="phone" id="phone" name="phone" required />
+                </div>
+                <div class="contact_input">
+                  <label class="" for="">LINE ID</label>
+                  <input type="text" id="line" name="line" />
+                </div>
+                <div class="contact_input">
+                  <label for="">居住地區</label>
+                  <input type="text" id="area" name="area" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <textarea
+                  class="contact_textarea"
+                  placeholder="請輸入您的留言(選填)"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </div>
+            </div>
+            <input id="submit" type="submit" value="立即預約" />
+          </form> -->
+        </div>
+      </div>
+      <footer class="footer">
+        <img
+          class="tree footer_tree footer_tree-1 d-lg-block d-none"
+          src="./public/img/footer-tree-1.webp"
+          alt=""
+        />
+        <img
+          class="tree footer_tree footer_tree-2 d-lg-block d-none"
+          src="./public/img/footer-tree-2.webp"
+          alt=""
+        />
+        <div class="footer_top">
+          <h2 data-aos="fade-right" data-aos-duration="1000">建案資訊</h2>
+          <div class="footer_inform">
+            <div class="d-md-flex align-items-end">
+              <ul class="footer_inform_list">
+                <li
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <p class="footer_inform_title">投資興建</p>
+                  <p class="footer_inform_content">
+                    <span class="footer_inform_content_list">
+                      <span>福太建設有限公司</span>
+                    </span>
+                  </p>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="150"
+                >
+                  <p class="footer_inform_title">建築規劃</p>
+                  <p class="footer_inform_content">輝池建築師事務所</p>
+                </li>
+              </ul>
+              <ul class="footer_inform_list">
+                <li
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="250"
+                >
+                  <p class="footer_inform_title">戶數規劃</p>
+                  <p class="footer_inform_content">1戶店鋪,8戶住宅</p>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  <p class="footer_inform_title">樓層規劃</p>
+                  <p class="footer_inform_content">1F-5F</p>
+                </li>
+              </ul>
+            </div>
+            <ul class="footer_inform_list">
+              <li
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="250"
+              >
+                <p class="footer_inform_title">接待會館</p>
+                <p class="footer_inform_content">桃園市中壢區龍慈路870號1F</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <p>
+            Design By
+            <a href="https://zhuliads.com/" target="_blank"
+              >Zhuli 築里整合行銷</a
+            >
+          </p>
+        </div>
+      </footer>
     </main>
 
     <div class="sideBtn">
-        <ul class="d-xl-block d-flex">
-            <li>
-                <a href="https://www.facebook.com/profile.php?id=61574561783534&locale=zh_TW" target="_blank">
-                    <img src="./public/img/fb.svg">
-                </a>
-            </li>
-            <li>
-                <a class="place" href="https://maps.app.goo.gl/jeDt5T8MCLLr3sQk7" target="_blank">
-                    <img src="./public/img/address.svg" alt="">
-                </a>
-            </li>
-            <li class="d-xl-block d-none">
-                <a href="https://maps.app.goo.gl/d2DZ42e3TRJ1j8YW7" target="_blank">
-                    <img src="./public/img/home.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="tel:03-460-9599" target="_blank">
-                    <img src="./public/img/phone.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a class="btn-top">
-                    <img src="./public/img/top.svg" alt="">
-                </a>
-            </li>
-        </ul>
+      <ul class="d-xl-block d-flex">
+        <li>
+          <a
+            href="https://www.facebook.com/profile.php?id=61574561783534&locale=zh_TW"
+            target="_blank"
+          >
+            <img src="./public/img/fb.svg" />
+          </a>
+        </li>
+        <li>
+          <a
+            class="place"
+            href="https://maps.app.goo.gl/jeDt5T8MCLLr3sQk7"
+            target="_blank"
+          >
+            <img src="./public/img/address.svg" alt="" />
+          </a>
+        </li>
+        <li class="d-xl-block d-none">
+          <a href="https://maps.app.goo.gl/d2DZ42e3TRJ1j8YW7" target="_blank">
+            <img src="./public/img/home.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="tel:03-460-9599" target="_blank">
+            <img src="./public/img/phone.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a class="btn-top">
+            <img src="./public/img/top.svg" alt="" />
+          </a>
+        </li>
+      </ul>
     </div>
-    
+
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script> -->
     <script src="./public/js/index.js?v=1"></script>
-    <script>
+
+    <!-- <script>
       (function () {
         emailjs.init("3j4kNvskrhLw3SIso");
       })();
@@ -788,9 +1438,51 @@
             },
             (error) => {
               alert("寄送失敗，請稍後再試");
-            }
+            },
           );
         });
+    </script> -->
+
+    <script>
+      const form = document.querySelector("#contact-form");
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const button = form.querySelector("#submit");
+
+        if (button.disabled) return;
+
+        const originalText = button.value;
+        button.disabled = true;
+        button.value = "送出中...";
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          const result = await response.json();
+
+          if (response.ok && result.success === "true") {
+            alert("感謝您的來信！我們很快就會和您聯繫！");
+            form.reset();
+          } else {
+            console.error("FormSubmit response:", result);
+            alert("寄送失敗，請稍後再試。");
+          }
+        } catch (error) {
+          console.error("Form submission error:", error);
+          alert("目前無法送出表單，請檢查網路連線後再試。");
+        } finally {
+          button.disabled = false;
+          button.value = originalText;
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
